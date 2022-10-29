@@ -1,0 +1,190 @@
+Q1.Write a program to find average of three numbers.
+Ans1.
+#include <stdio.h>
+int main()
+{
+   int a,b,c,d;
+   printf("put three numbers: "); 
+   scanf("%d %d %d" ,&a ,&b ,&c);
+   printf("the aveage of three numbers is: %d",d = (a+b+c)/3);
+}
+
+
+Q2.check if given alphabet is vowel or not using switch function.
+Ans2. 
+#include <stdio.h>
+
+int main()
+{
+    char a;
+    printf("Enter any alphabet: ");
+    scanf("%c", &a);
+    switch(a)
+    {
+        case 'a': 
+            printf("given character is vowel");
+            break;
+        case 'e': 
+            printf("given character is vowel");
+            break;
+        case 'i': 
+            printf("given character is vowel");
+            break;
+        case 'o': 
+            printf("given character is vowel");
+            break;
+        case 'u': 
+            printf("given character is vowel");
+            break;
+        case 'A': 
+            printf("given character is vowel");
+            break;
+        case 'E': 
+            printf("given character is vowel");
+            break;
+        case 'I': 
+            printf("given character is vowel");
+            break;
+        case 'O': 
+            printf("given character is vowel");
+            break;
+        case 'U': 
+            printf("given character is vowel");
+            break;
+        default: 
+            printf("given character is not vowel");
+    }
+}
+
+
+Q3.check if any number is 2 digit or not
+Ans3. 
+#include<stdio.h>
+int main()
+{
+    int x;
+    printf("enter number : ");
+    scanf("%d",&x);
+    printf("%d", x>9 && x<100);
+    return 0;
+}
+
+
+Q4. check if number is even or odd.
+ans4. 
+#include<stdio.h>
+int main()
+{ 
+int x;
+    printf("Put your value here: ");
+    scanf("%d", &x);
+    if(x % 2 == 0)
+        printf("your number is even");
+    else
+        printf("your number is odd");
+    
+    return 0;
+}
+
+
+q5. Check if given number is 2 digit or not.
+ans5.
+#include<stdio.h>
+int main()
+{ 
+    int x;
+    printf("Put your value here:");
+    scanf("%d", &x);
+    printf("%d", x % 2 == 0);
+}
+
+
+q6. check if given number is digit or not.
+and6. 
+#include <stdio.h>
+int main()
+{
+   char a;
+   printf("enter a value: ");
+   scanf("&c",a);
+   if (a>='0' && a<='9')
+   printf("value is digit");
+   else
+   printf("value is not digit");
+}
+
+
+q7. swaping varible using third varible.
+ans7.
+#include <stdio.h>
+int main()
+{
+   int a,b,c;
+   printf("PUT TWO VALUES AND GIVE SOME SPACE BETWEEN THEM: ");
+   scanf("%d %d",&a,&b);
+   c=a;
+   a=b;
+   b=c;
+   printf("%d%d",a,b);
+}
+
+
+q8. swap varible without using third value.
+ans8. 
+#include <stdio.h>
+int main()
+{
+   int a,b,c;
+   printf("PUT TWO VALUES AND GIVE SOME SPACE BETWEEN THEM: ");
+   scanf("%d %d",&a,&b);
+   a = a + b;
+   b = a - b;
+   a = a - b;
+   printf("%d %d",a,b); 
+}
+
+
+q9. swap value without using third value and arithmetic operator.
+ans9.
+  #include <stdio.h>
+int main()
+{
+   int a,b,c;
+   printf("PUT TWO VALUES AND GIVE SOME SPACE BETWEEN THEM:");
+   scanf("%d %d",&a,&b);
+   a = a ^ b;
+   b = a ^ b;
+   a = a ^ b;
+   printf("%d %d",a,b); 
+}
+
+
+q10. check if a person is eligible for voting or not using condition statements.
+ans10. 
+#include <stdio.h>
+int main()
+{
+   int age;
+   printf("enter your age: ");
+   scanf("%d",&age);
+   if(age>=18)
+   printf("you are eligible for voting");
+   else
+   printf("you are not eligible for voting");
+}
+
+
+q11. check if number is negative, positive or zero
+ans11. 
+#include <stdio.h>
+int main()
+{
+   int a;
+   printf("enter a value: "); scanf("%d",&a);
+   if(a>0)
+   printf("Number is positive");
+   else if(a<0)
+   printf("number is negative");
+   else
+   printf("number is zero");
+}
