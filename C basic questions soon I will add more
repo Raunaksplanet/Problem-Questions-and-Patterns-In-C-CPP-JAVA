@@ -318,4 +318,37 @@ int main(int num){
    if(num<=n && printf("%d ",num) && main(num+1)){}
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q23. 
+q23. take a input from user in array and reverse it
+ans23. 
+#include<stdio.h>    
+int main()    
+{    
+ int arr[5];
+ for(int i=0;i<=4;i++){
+    printf("Enter array value: ");
+    scanf("%d",&arr[i]);
+    }
+    for(int i=4;i>=0;i--){
+        printf("%d",arr[i]);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q24. first take input array size then take input array value form user and then print all values
+ans24.
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("Enter array size: ");
+    scanf("%d", &n);
+    char arr[n];
+    for (int i = 0; i <= n; i++){
+        printf("enter array value at index %d: ",i);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<=n;i++){
+        printf("%d",arr[i]);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q25. 
