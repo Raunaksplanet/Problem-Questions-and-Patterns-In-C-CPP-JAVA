@@ -179,4 +179,143 @@ int main()
    printf("number is zero");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q12. 
+q12.check if a year is leap year or not
+ans12. 
+#include <stdio.h>
+int main() 
+{
+   int a;
+   printf("Enter a year: ");
+   scanf("%d", &a);
+   if (a % 400 == 0)
+      printf("%d is a leap year.", a);
+   else if (a % 100 == 0) 
+      printf("%d is not a leap year.", a);
+   else if (a % 4 == 0) 
+      printf("%d is a leap year.", a);
+   else 
+      printf("%d is not a leap year.", a);
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q13. same question 12 but in shorter
+ans13.
+#include <stdio.h>
+int main()
+{
+  int a;
+  printf("\n Please Enter any number you wish \n "); scanf("%d", &a);
+  if (( a%400 == 0)|| (( a%4 == 0 ) &&( a%100 != 0)))
+      printf("%d is a leap year", a);
+  else
+      printf("%d is not a leap year", a);
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q14. check is student is pass or fail passing marks 31
+ans14. 
+#include <stdio.h>
+int main()
+{
+    
+  int marks;
+  printf("enter student mark: "); scanf("%d",&marks);
+  if(marks>30)
+  printf("student is paas");
+  else if(marks<=30)
+  printf("student is fail");
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q15. same question no.14 but in shorter code
+ans15.
+#include <stdio.h>
+int main()
+{
+    int marks;
+    printf("enter student mark: "); scanf("%d", &marks);
+    marks>30?printf("student is paas"):printf("student is fail");
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q16. check if given alphabet is upercase or lower case
+ans16.
+#include <stdio.h>
+int main()
+{
+    char c;
+    printf("enter a alphabet: "); scanf("%c",&c);
+    if(c >= 'A' && c <= 'Z')
+    printf("upper case");
+    else if (c >= 'a' && c<='z')
+    printf("lower case");
+    else
+    printf("invalid input");
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q17. Take input 3 subject marks using array and output it
+ans17. 
+#include<stdio.h>
+
+int main(){
+    int marks[2];
+    printf("Enter Math,Englih,Computer subjects marks: "); scanf("%d %d %d",&marks[0],&marks[1],&marks[2]);
+    printf("Your Math marks is: %d \nYour English marks is: %d \nYour Computer marks is: %d",marks[0],marks[1],marks[2]); 
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q18. print semicolon without using semicolon
+ans18. 
+#include<stdio.h>
+
+int main(){
+    if(printf("%c",59)){}
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q19. Take input from user in array and print out the result
+ans19. 
+#include<stdio.h>
+
+int main(){
+    int i,adhar[5];
+    for(i=0;i<5;i++){
+        printf("%d index no: ",i);
+        scanf("%d",&adhar[i]);
+    }
+    printf("Given number in array is\n");
+    for(i=0;i<5;i++){
+        printf("%d index no: %d\n",i,adhar[i]);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q20. What should be the condition when following code snippet print both hello world:- 
+    if ("condition")
+        printf("Hello");
+    else
+        printf("World");
+ans20. 
+#include <stdio.h>
+
+int main()
+{
+    if (!printf("Hello"))
+        printf("Hello");
+    else
+        printf("World");
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q21. Take input 3 subject marks using array and output it
+ans21.
+#include<stdio.h>
+
+int main(){
+    int marks[2];
+    printf("Enter Math,Englih,Computer subjects marks: "); scanf("%d %d %d",&marks[0],&marks[1],&marks[2]);
+    printf("Your Math marks is: %d \nYour English marks is: %d \nYour Computer marks is: %d",marks[0],marks[1],marks[2]); 
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q22. print number from 1 to n without using loops
+ans22. 
+#include <stdio.h>
+#define n 100
+int main(int num){
+   if(num<=n && printf("%d ",num) && main(num+1)){}
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q23. 
