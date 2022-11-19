@@ -554,7 +554,7 @@ int main()
     printf("%d & %d",m1,m2);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q37. Tarun sir special question.
+q37. Tarun sir special question (basically advance version of Fibonacci series).
 ans37.
 #include <stdio.h>
 int main(){
