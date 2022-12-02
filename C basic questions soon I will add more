@@ -65,7 +65,7 @@ int x;
     return 0;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q5. Check if given number is 2 digit or not.
+q5. Check if given number is divisible by 2 or not.
 ans5.
 #include<stdio.h>
 int main()
