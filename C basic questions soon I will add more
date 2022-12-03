@@ -685,4 +685,32 @@ int main()
     printf("%d", a);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q44. 
+q44. if v = 1 then stdout A, if v = 2 then stdout BB, if v=5 then stdout E E E E E.
+ans. 
+#include <stdio.h>
+
+int main()
+{
+    int a,i;
+    printf("Enter a value: "); scanf("%d",&a);
+    int n=a;
+    for(i=0;i<n;i++)
+    {
+        printf("%c",64+a);
+    }
+}
+// alternate code little advance.
+#include <stdio.h>
+
+int main()
+{
+    int i,a,n;
+    printf("Enter a value: "); scanf("%d",&a);
+    n=a;
+    for(i=1;i<=n;i++)
+    {
+        printf("%d.%c\n",i,64+a);
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q45. 
