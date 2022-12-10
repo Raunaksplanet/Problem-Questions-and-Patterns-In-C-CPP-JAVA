@@ -751,4 +751,32 @@ int main()
     } 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q47.
+q47.Convert a given number into positive,negative and zero
+ans47.
+#include <stdio.h>
+int main()
+{
+	int n;
+	
+    printf("Enter an integer : ");
+    scanf("%d",&n);
+    
+   if (n<0)
+   { 
+       n=-n;
+       printf("converted negative integar into positive: %d\n",n);
+	}
+	
+   if (n>0)
+   { 
+       printf("converted integar into positive: %d\n",n);
+	}
+
+   if (n>0 || n<0)
+   { 
+      n = 0;
+       printf("converted integar into zero: %d\n",n);
+	}
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q48. 
