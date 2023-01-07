@@ -2,13 +2,14 @@
 
 <h1 align="center">Hi 👋, I'm Raunak Gupta</h1>
 <h3 align="center">A passionate Programmer</h3>
-<img align="right" alt="Coding" width="400" src="https://media.tenor.com/BqbIhT4Mb7cAAAAd/programmer-rounded-edges.gif">
+<img align="right" alt="Coding" width="400" src="https://media.tenor.com/uYP_Nkq8VPsAAAAM/coding-hello-world.gif">
 
-I made this repository to add some basic c Programming questions, 
-you can try this questions if you have basic knowledge of Uniary,Binary and Ternary operator and also condition and iterative statements
-you can also contribute, just foke this repo and add your question then i will add updatet with credits(LET ME KNOW IF THERE IS ANY OTHER GOOD WAY TO DO I'M NEW HERE)
-I will really appreciate but keep in mind that do not share questions related to patterns
-because we have alternate repo for that.
+- 🌱 This repositorie is made for **practicing C/c++ questions**
 
-that's it for this repo i guess see you later.
-in another repo with another set of questions problem hehe.
+- 💬 **contributors are welcome here**
+
+- ⚡ Fun fact **Every week we try to add new questions**
+
+<h3 align="left">Languages:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> </p>
+<h1 align="center">Keep learning and practicing</h1>
