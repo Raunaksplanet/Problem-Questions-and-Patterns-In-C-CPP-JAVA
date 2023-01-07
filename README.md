@@ -4,7 +4,7 @@
 <h3 align="center">A passionate Programmer</h3>
 <img align="right" alt="Coding" width="400" src="https://media.tenor.com/uYP_Nkq8VPsAAAAM/coding-hello-world.gif">
 
-- 🌱 This repositorie is made for **practicing C/c++ questions**
+- 🌱 This repositorie is made for **practicing C/C++ questions**
 
 - 💬 **contributors are welcome here**
 
