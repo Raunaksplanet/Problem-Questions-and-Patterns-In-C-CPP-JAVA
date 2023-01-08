@@ -16,4 +16,21 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q1.Write a program to print hello world x time given by user.
+Q2.Write a program to Count the digits entered by user.
+ans2. 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int b, a = 1;
+    cin >> b;
+    int temp = b;
+    while (temp /= 10)
+    {
+        a++;
+    }
+    cout << "The a " << b << " has " << a << " digit(s)" << endl;
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q3.
