@@ -52,4 +52,23 @@ int main()
     return 0;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q4. 
+q4. Find sum of first n natural numbers
+ans4.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a = 0, b;
+    cout << "Enter output limit: ";
+    cin >> b;
+    for (int i = 1; i <= b; i++)
+    {
+        a = a + i;
+    }
+    cout << a;
+}    
+--------------------------------------------------------------------------------------------------------------------------------------
+q5. Find sum of first n natural numbers
+ans5.
+    
