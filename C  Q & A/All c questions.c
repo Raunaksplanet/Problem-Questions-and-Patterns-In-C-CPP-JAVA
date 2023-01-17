@@ -812,7 +812,32 @@ int main()
     printf("%d", a);
 }	
 --------------------------------------------------------------------------------------------------------------------------------------
-q50. Find sum of first n natural numbers
+q50. Write a program to input in array size of n and output all sub-array.
 ans50.
-	
+#include<stdio.h>
+
+int main(){
+    int i,j,n;
+   printf("Enter array size: "); scanf("%d",&n);
+
+   int arr[n];
+
+   printf("Enter array elemnet-- \n");
+   for(i=0;i<n;i++)
+   {
+      scanf("%d",&arr[i]);
+   }
+   
+   for(i=0;i<n;i++)
+   {
+      for(j=i;j<n;j++)
+      {
+         printf("%d  ",arr[j]);
+      }
+      printf("\n");
+   }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q51. Write a program to input in array size of n and output all sub-array.
+ans51.
 	
