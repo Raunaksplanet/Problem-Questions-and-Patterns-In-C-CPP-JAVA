@@ -69,6 +69,67 @@ int main()
     cout << a;
 }    
 --------------------------------------------------------------------------------------------------------------------------------------
-q5. Find sum of first n natural numbers
+q5. Write a program to input in a array by user and of size n from evey i to n display max
+********************************************************************************************
+Example: n = 6 , arr[6] = 0 -9 1 3 -4 5 
+output = 0 0 1 3 3 5     
+********************************************************************************************
 ans5.
-    
+    #include<iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int n,mx=0,i;
+
+    cout << "Enter size of array: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter array element: ";
+    for(i=0;i<n;i++)
+    {
+        cin >> arr[i];
+    } 
+
+    for(i=0;i<n;i++)
+    {
+        mx = max(mx,arr[i]);
+        cout << mx << "  ";
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q6. Same as q5 but now find max of sub array of array
+ans6.    
+#include<iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int n,mx=0,i,j;
+
+    cout << "Enter size of array: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter array element: ";
+    for(i=0;i<n;i++)
+    {
+        cin >> arr[i];
+    } 
+
+    for(i=0;i<n;i++)
+    {
+        mx = 0;
+        for(j=i;j<n;j++)
+        {
+            mx = mx + arr[j];
+            cout << mx << "  ";
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q7. Same as q5 but now find max of sub array of array
+ans7. 
