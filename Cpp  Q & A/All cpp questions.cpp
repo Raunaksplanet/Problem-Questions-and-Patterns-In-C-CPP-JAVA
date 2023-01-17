@@ -131,5 +131,35 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q7. Same as q5 but now find max of sub array of array
+q7. Write a program to input in array size of n and output all sub-array.
 ans7. 
+    
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   int i,j,n;
+   cout << "Enter array size: ";
+   cin >> n;
+
+   int arr[n];
+
+   cout << "Enter array elemnet-- ";
+   for(i=0;i<n;i++)
+   {
+      cin >> arr[i];
+   }
+   
+   for(i=0;i<n;i++)
+   {
+      for(j=i;j<n;j++)
+      {
+         cout << arr[j] << "  ";
+      }
+      cout << endl;
+   }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q8. Write a program to input in array size of n and output all sub-array.
+ans8.
