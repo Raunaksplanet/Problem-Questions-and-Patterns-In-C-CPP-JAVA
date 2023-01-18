@@ -227,3 +227,21 @@ int main()
 --------------------------------------------------------------------------------------------------------------------------------------
 q9. 
 ans9.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int n , a, b, c, d;
+    cout << "Enter 4 digit number: "; 
+    cin >> n;
+    a = n % 10;
+    (a % 2 != 0)? cout << ++a: (a % 2 == 0)? cout << a: cout << "";
+    b = (n / 10) % 10;
+    (b % 2 != 0)? cout << ++b: (b % 2 == 0)? cout << b: cout << "";
+    c = (n / 100) % 10; 
+    (c % 2 != 0)? cout << ++c: (c % 2 == 0)? cout << c: cout << "";
+    d = (n / 1000) % 10;
+    (d % 2 != 0)? cout << ++d: (d % 2 == 0)? cout << d: cout << "";
+}
