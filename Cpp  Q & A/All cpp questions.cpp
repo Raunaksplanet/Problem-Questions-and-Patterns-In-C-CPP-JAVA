@@ -161,5 +161,65 @@ int main()
    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q8. Write a program to input in array size of n and output all sub-array.
+q8. Write a program to input a 4 digit number from user and convert ever single digit into even number.
 ans8.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, a, b, c, d;
+    cout << "Enter 4 digit number: ";
+    cin >> n;
+
+    a = n % 10;
+    if (a % 2 != 0)
+        cout << ++a;
+    else
+    {
+        if (a % 2 == 0)
+        {
+            cout << a;
+        }
+    }
+
+    b = (n / 10) % 10;
+    if (b % 2 != 0)
+        cout << ++b;
+    else
+    {
+        if (b % 2 == 0)
+        {
+            cout << b;
+        }
+    }
+
+    c = (n / 100) % 10;
+    c = (n / 10) % 10;
+    if (c % 2 != 0)
+        cout << ++c;
+    else
+    {
+        if (c % 2 == 0)
+        {
+            cout << c;
+        }
+    }
+
+    d = (n / 1000) % 10;
+    d = (n / 10) % 10;
+    if (d % 2 != 0)
+        cout << ++d;
+    else
+    {
+        if (d % 2 == 0)
+        {
+            cout << d;
+        }
+    }
+
+} 
+--------------------------------------------------------------------------------------------------------------------------------------
+q9. 
+ans9.
