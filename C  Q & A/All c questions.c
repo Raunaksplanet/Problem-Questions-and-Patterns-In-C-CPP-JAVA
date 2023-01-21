@@ -838,6 +838,38 @@ int main(){
    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q51. Write a program to input in array size of n and output all sub-array.
+q51. Write a program to add and subtract two number without using '+','-' operator.
 ans51.
-	
+#include <stdio.h>
+
+int main()
+{
+    int n, a, m, k;
+    printf("1.Add\n2.Subtract\nChoose you want to add or subtract :");
+    scanf("%d", &m);
+    if (m == 1)
+    {
+        printf("Enter Two number which you want to add: ");
+        scanf("%d %d", &a, &n);
+        for (int i = 1; i <= n; i++)
+        {
+            a++;
+        }
+        printf("Answer is %d", a);
+    }
+    else if(m == 2)
+    {
+        printf("Enter Two number which you want to subtract: ");
+        scanf("%d %d", &a, &n);
+        for (int i = 1; i <= n; i++)
+        {
+            a--;
+        }
+        printf("Answer is %d", a);
+    }
+    else
+    printf("Wrong input");
+}	
+--------------------------------------------------------------------------------------------------------------------------------------
+q52. Write a program to add and subtract two number without using '+','-' operator.
+ans52.	
