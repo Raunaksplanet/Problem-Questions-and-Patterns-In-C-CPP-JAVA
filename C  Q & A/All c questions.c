@@ -871,5 +871,22 @@ int main()
     printf("Wrong input");
 }	
 --------------------------------------------------------------------------------------------------------------------------------------
-q52. Write a program to add and subtract two number without using '+','-' operator.
+q52.Write a program to increment pointer with array data and output address and data of arrray in order.
 ans52.	
+#include <stdio.h>
+
+int main()
+{
+    int arr[] = {10,20,30};
+    int i,*ptr;
+    ptr = arr;
+    for(i=0;i<3;i++)
+    {
+        printf("Address of variable [%d]: = %x\n",i,ptr);
+        printf("data of variable    [%d]: = %d\n",i,*ptr);
+        ptr++;
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q53.Write a program to increment pointer with array data and output address and data of arrray.
+ans53.
