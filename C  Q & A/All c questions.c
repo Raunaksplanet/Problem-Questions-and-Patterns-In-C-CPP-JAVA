@@ -888,5 +888,24 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q53.Write a program to increment pointer with array data and output address and data of arrray.
+q53.Write a program to input a number from user and break into 3 parts in such orde:-
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+if n = 15
+then a = 3 (can be random)
+     b = 7 (should be larger than 1 one)
+     c = 5 (shoulder be larger then 1 one)
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ans53.
+#include<stdio.h>
+int main()
+{
+    int n,a,b,c;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    a = n/5;
+    b = n/3;
+    c = n - (a + b);
+    printf("%d %d %d", a,b,c); 
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q54.Write a program to input a number from user and break into 3 parts in such orde:-
