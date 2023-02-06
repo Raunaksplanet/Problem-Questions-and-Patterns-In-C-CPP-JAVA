@@ -916,6 +916,7 @@ Explained:- R a u n a k s
             1 2 3 4 5 6 7 
 Odd number: R   u   a   s
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Ans54. 
 #include<stdio.h>
 #include<string.h>
 int main()
@@ -929,4 +930,14 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q55.
+q55. Write a program to input a string from user and print output the size of string without using strlen function
+Ans55.
+#include <stdio.h>
+int main()
+{
+    int i;
+    char str[50];
+    printf("Enter a string: "); scanf("%[^\n]s", str);
+    for( i = 0 ; str[i]!='\0' ;i++);
+    printf("%d", i);
+}	
