@@ -922,7 +922,7 @@ Ans54.
 int main()
 {
     char arr[50] ;
-    printf("Enter a string: "); scanf("%s", &arr);
+    printf("Enter a string: "); scanf("%[^\n]s", &arr);
     int l = strlen(arr);
     for(int i=0; i<l; i++)
     {
