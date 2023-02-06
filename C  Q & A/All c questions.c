@@ -908,4 +908,25 @@ int main()
     printf("%d %d %d", a,b,c); 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q54.Write a program to input a number from user and break into 3 parts in such orde:-
+q54.Write a program to input a string from user and print output all the character at odd indexes:-
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Input: A = "Raunaks"
+Output: Ruas
+Explained:- R a u n a k s 
+            1 2 3 4 5 6 7 
+Odd number: R   u   a   s
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char arr[50] ;
+    printf("Enter a string: "); scanf("%s", &arr);
+    int l = strlen(arr);
+    for(int i=0; i<l; i++)
+    {
+        (i % 2 == 0)?printf("%c",  arr[i]):printf("");
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q55.
