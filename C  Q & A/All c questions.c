@@ -988,7 +988,7 @@ int main()
     }
     printf("1 Maxium number in array is %d\n", m1);
     printf("2 Maxium number in array is %d\n", m2);
-    printf("2 Maxium number in array is %d", m3);
+    printf("3 Maxium number in array is %d", m3);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
 q58. 	
