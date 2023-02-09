@@ -956,4 +956,39 @@ int main()
     printf("Lenght is %d",counter);
 }	
 --------------------------------------------------------------------------------------------------------------------------------------
-q57. 	
+q57. Write a program to find 3 maxium numbers in array
+ans57.
+#include <stdio.h>
+int main()
+{
+    int arr[10],n = 10, i, m1 = 0, m2 = 0, m3 = 0;
+    printf("Enter element in array--- \n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    for(i = 0; i<n; i++)
+    {
+        if(arr[i] > m1)
+        {
+            m3 = m2;
+            m2 = m1;
+            m1 = arr[i];
+        }
+        else if(arr[i]>m2 && arr[i]<m1)
+        {
+            m3 = m2;
+            m2 = arr[i];
+        }
+        else if(arr[i]<m2 && arr[i] < m1 && arr[i]>m3)
+        {
+            m3 = arr[i];
+        }
+    }
+    printf("1 Maxium number in array is %d\n", m1);
+    printf("2 Maxium number in array is %d\n", m2);
+    printf("2 Maxium number in array is %d", m3);
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+q58. 	
