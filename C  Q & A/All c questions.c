@@ -1020,4 +1020,32 @@ int main()
     }
 }	
 --------------------------------------------------------------------------------------------------------------------------------------
-q59.	
+q59.Write a program to create own header file and than use it.
+ans59.
+-- First we'll create a file name(name what ever you want for this questions we'll create file named head.h) remeber file extension shoulb be .h
+-- the file:--
+	
+// File start
+void add(int a, int b)
+{
+    printf("Added value: %d\n", a + b);
+}
+void multiply(int a, int b)
+{
+    printf("Multiplied value: %d\n", a * b);
+}
+// File End
+
+-- 2nd we create our main c file in whcih we use our header file 
+
+#include<stdio.h>
+#include "name.h"
+int main()
+{
+    
+    add(4,5);
+    multiply(2,2);
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+q60.
