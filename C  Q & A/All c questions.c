@@ -1,21 +1,19 @@
+
 Q1.Write a program to find average of three numbers.
 Ans1.
 #include <stdio.h>
-int main()
+int main(int a,int b, int c)
 {
-   int a,b,c,d;
-   printf("put three numbers: "); 
+   printf("Enter Three numbers: "); 
    scanf("%d %d %d" ,&a ,&b ,&c);
-   printf("the aveage of three numbers is: %d",d = (a+b+c)/3);
+   printf("Aveage of three number is %d",(a+b+c)/3);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q2.check if given alphabet is vowel or not using switch function.
+Q2.Write a program to check if given alphabet is vowel or not using switch function.
 Ans2. 
 #include <stdio.h>
-
-int main()
+int main(char a;)
 {
-    char a;
     printf("Enter any alphabet: ");
     scanf("%c", &a);
     switch (a)
@@ -30,157 +28,138 @@ int main()
     case 'I':
     case 'O':
     case 'U':
-        printf("given character is vowel");
+        printf("it's Vowel");
         break;
     default:
-        printf("given character is not vowel");
+        printf("It's not vowel");
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q3.check if any number is 2 digit or not
+Q3.Write a program to check if any number is two digit or not
 Ans3. 
 #include<stdio.h>
-int main()
+int main(int x)
 {
-    int x;
-    printf("enter number : ");
+    printf("Enter a number: ");
     scanf("%d",&x);
-    printf("%d", x>9 && x<100);
-    return 0;
+    (x>9 && x<100)?printf("%d is Two digit",x):printf("%d is not two digit",x); 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q4. check if number is even or odd.
+Q4.Write a program to check if number is even or odd.
 ans4. 
-#include<stdio.h>
-int main()
-{ 
-int x;
-    printf("Put your value here: ");
+#include <stdio.h>
+int main(int x)
+{
+    printf("Enter a number: ");
     scanf("%d", &x);
-    if(x % 2 == 0)
-        printf("your number is even");
-    else
-        printf("your number is odd");
-    
-    return 0;
+    (x % 2 == 0)? printf("%d is Even",x) : printf("%d is not Even",x);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q5. Check if given number is divisible by 2 or not.
+Q5.Write a program to Check if given number is divisible by 2 or not.
 ans5.
 #include<stdio.h>
-int main()
+int main(int x)
 { 
-    int x;
-    printf("Put your value here:");
+    printf("Enter a number: ");
     scanf("%d", &x);
-    printf("%d", x % 2 == 0);
+    ("%d", x % 2 == 0)?printf("%d is divisible by 2",x):printf("%d is not divisible by 2",x);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q6. check if given number is digit or not.
+Q6.Write a program to check if given number is digit or not.
 and6. 
 #include <stdio.h>
-int main()
+int main(char a)
 {
-   char a;
-   printf("enter a value: ");
-   scanf("&c",a);
-   if (a>='0' && a<='9')
-   printf("value is digit");
-   else
-   printf("value is not digit");
+   printf("Enter a character: ");
+   scanf("%c",&a);
+   (a>='0' && a<='9')?printf("\"%c\" Character is digit",a):printf("\"%c\" Character is not digit",a);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q7. swaping varible using third varible.
+Q7.Write a program to swaping varible using third varible.
 ans7.
 #include <stdio.h>
-int main()
+int main(int a,int b,int c)
 {
-   int a,b,c;
-   printf("PUT TWO VALUES AND GIVE SOME SPACE BETWEEN THEM: ");
-   scanf("%d %d",&a,&b);
-   c=a;
-   a=b;
-   b=c;
-   printf("%d%d",a,b);
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("\nBefore\nA = %d\nB = %d\n", a, b);
+    c = a;
+    a = b;
+    b = c;
+    printf("\nAfter\nA = %d\nB = %d", a, b);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q8. swap varible without using third value.
+Q8.Write a program to swap varible without using third value.
 ans8. 
 #include <stdio.h>
-int main()
+int main(int a,int b)
 {
-   int a,b,c;
-   printf("PUT TWO VALUES AND GIVE SOME SPACE BETWEEN THEM: ");
+   printf("Enter two numbers: ");
    scanf("%d %d",&a,&b);
+   printf("\nBefore\nA = %d\nB = %d\n", a, b);
    a = a + b;
    b = a - b;
    a = a - b;
-   printf("%d %d",a,b); 
+   printf("\nAfter\nA = %d\nB = %d", a, b);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q9. swap value without using third value and arithmetic operator.
+Q9.Write a program to swap value without using third value and arithmetic operators.
 ans9.
-  #include <stdio.h>
-int main()
+#include <stdio.h>
+int main(int a,int b)
 {
-   int a,b,c;
-   printf("PUT TWO VALUES AND GIVE SOME SPACE BETWEEN THEM:");
+   printf("Enter two numbers: ");
    scanf("%d %d",&a,&b);
+   printf("\nBefore\nA = %d\nB = %d\n", a, b);
    a = a ^ b;
    b = a ^ b;
    a = a ^ b;
-   printf("%d %d",a,b); 
+   printf("\nAfter\nA = %d\nB = %d", a, b); 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q10. check if a person is eligible for voting or not using condition statements.
+Q10.Write a program to check if a person is eligible for voting or not using condition statements.
 ans10. 
 #include <stdio.h>
-int main()
+int main(int age)
 {
-   int age;
-   printf("enter your age: ");
+   printf("Enter age: ");
    scanf("%d",&age);
-   if(age>=18)
-   printf("you are eligible for voting");
-   else
-   printf("you are not eligible for voting");
+   (age>=18)?printf("Eligible"):printf("Not Eligible");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q11. check if number is negative, positive or zero
+Q11.Write a program to check if number is negative, positive or zero
 ans11. 
 #include <stdio.h>
-int main()
+int main(int a)
 {
-   int a;
-   printf("enter a value: "); scanf("%d",&a);
-   if(a>0)
-   printf("Number is positive");
-   else if(a<0)
-   printf("number is negative");
-   else
-   printf("number is zero");
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    if (a > 0)
+        printf("Number is positive");
+    else if (a < 0)
+        printf("number is negative");
+    else
+        printf("number is zero");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q12.check if a year is leap year or not
+Q12.Write a program to check if a year is leap year or not
 ans12. 
 #include <stdio.h>
-int main() 
+int main(int a)
 {
-   int a;
-   printf("Enter a year: ");
-   scanf("%d", &a);
-   if (a % 400 == 0)
-      printf("%d is a leap year.", a);
-   else if (a % 100 == 0) 
-      printf("%d is not a leap year.", a);
-   else if (a % 4 == 0) 
-      printf("%d is a leap year.", a);
-   else 
-      printf("%d is not a leap year.", a);
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    if (a > 0)
+        printf("Number is positive");
+    else if (a < 0)
+        printf("number is negative");
+    else if(a == 0)
+        printf("number is zero"); 
 }
---------------------------------------------------------------------------------------------------------------------------------------
-q13. same question 12 but in shorter
-ans13.
+
+// Alternative codes
+// 1)
 #include <stdio.h>
 int main()
 {
@@ -192,221 +171,129 @@ int main()
       printf("%d is not a leap year", a);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q14. check is student is pass or fail passing marks 31
+Q13.Write a program to check if given alphabet is upercase or lower case
+ans13.
+#include <stdio.h>
+int main(char c)
+{
+    printf("Enter a Alphabet: ");
+    scanf("%c", &c);
+    if (c >= 'A' && c <= 'Z')
+        printf("Upper case");
+    else if (c >= 'a' && c <= 'z')
+        printf("Lower case");
+    else
+        printf("Invalid input");
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q14.Write a program to print semicolon without using semicolon
 ans14. 
+#include<stdio.h>
+int main()
+{
+    if(printf("%c",59)){}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Q15. What should be the condition when following code snippet print both hello world:- 
+    if ("condition")
+        printf("Hello ");
+    else
+        printf("World");
+Ans15
+
 #include <stdio.h>
 int main()
 {
-    
-  int marks;
-  printf("enter student mark: "); scanf("%d",&marks);
-  if(marks>30)
-  printf("student is paas");
-  else if(marks<=30)
-  printf("student is fail");
+    if (!printf("Hello "))
+        printf("Hello ");
+    else
+        printf("World");
 }
---------------------------------------------------------------------------------------------------------------------------------------
-q15. same question no.14 but in shorter code
-ans15.
+-------------------------------------------------------------------------------------------------------------------------------------
+Q16.Write a program to print number from 1 to n without using loops
+ans16. 
 #include <stdio.h>
+#define n 10
 int main()
 {
-    int marks;
-    printf("enter student mark: "); scanf("%d", &marks);
-    marks>30?printf("student is paas"):printf("student is fail");
+    static int i = 1;
+    if (i <= n && printf("%d  ", i++)){
+        main();
+    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q16. check if given alphabet is upercase or lower case
-ans16.
+Q17.Write a program to Perform Conversions (binary,octal,hexa)
+ans17.
 #include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
 int main()
 {
     char c;
-    printf("enter a alphabet: "); scanf("%c",&c);
-    if(c >= 'A' && c <= 'Z')
-    printf("upper case");
-    else if (c >= 'a' && c<='z')
-    printf("lower case");
+    printf("Conversions--\n");
+    printf("1)Binary  2)Octal\n3)Hexadecimal");
+    printf("\nSelect number to perform Conversion: ");
+    c = getch();
+    system("cls");
+    if (c == '1')
+    {
+        int n, i, j, arr[10];
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        for (i = 0; n > 0; i++)
+        {
+            arr[i] = n % 2;
+            n = n / 2;
+        }
+
+        for (int j = i - 1; j >= 0; j--)
+        {
+            printf("%d", arr[j]);
+        }
+    }
+    else if (c == '2')
+    {
+        int n, arr[10], i;
+        printf("Enter a number: ");
+        scanf("%d", &n);
+        for (i = 0; n > 0; i++)
+        {
+            arr[i] = n % 8;
+            n = n / 8;
+        }
+        for (int j = i - 1; j >= 0; j--)
+        {
+            printf("%X", arr[j]);
+        }
+    }
+    else if (c == '3')
+    {
+        int n, arr[100], i;
+        printf("Enter a number: ");
+        scanf("%d", &n);
+        for (i = 0; n > 0; i++)
+        {
+            arr[i] = n % 16;
+            n = n / 16;
+        }
+        for (int j = i - 1; j >= 0; j--)
+        {
+            printf("%X", arr[j]);
+        }
+    }
     else
-    printf("invalid input");
+    printf("Wrong input");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q17. Take input 3 subject marks using array and output it
-ans17. 
-#include<stdio.h>
-
-int main(){
-    int marks[2];
-    printf("Enter Math,Englih,Computer subjects marks: "); scanf("%d %d %d",&marks[0],&marks[1],&marks[2]);
-    printf("Your Math marks is: %d \nYour English marks is: %d \nYour Computer marks is: %d",marks[0],marks[1],marks[2]); 
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q18. print semicolon without using semicolon
-ans18. 
-#include<stdio.h>
-
-int main(){
-    if(printf("%c",59)){}
-    return 0;
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q19. Take input from user in array and print out the result
-ans19. 
-#include<stdio.h>
-
-int main(){
-    int i,adhar[5];
-    for(i=0;i<5;i++){
-        printf("%d index no: ",i);
-        scanf("%d",&adhar[i]);
-    }
-    printf("Given number in array is\n");
-    for(i=0;i<5;i++){
-        printf("%d index no: %d\n",i,adhar[i]);
-    }
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q20. What should be the condition when following code snippet print both hello world:- 
-    if ("condition")
-        printf("Hello");
-    else
-        printf("World");
-ans20. 
-#include <stdio.h>
-
-int main()
-{
-    if (!printf("Hello"))
-        printf("Hello");
-    else
-        printf("World");
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q21. Take input 3 subject marks using array and output it
-ans21.
-#include<stdio.h>
-
-int main(){
-    int marks[2];
-    printf("Enter Math,Englih,Computer subjects marks: "); scanf("%d %d %d",&marks[0],&marks[1],&marks[2]);
-    printf("Your Math marks is: %d \nYour English marks is: %d \nYour Computer marks is: %d",marks[0],marks[1],marks[2]); 
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q22. print number from 1 to n without using loops
-ans22. 
-#include <stdio.h>
-#define n 100
-int main(int num){
-   if(num<=n && printf("%d ",num) && main(num+1)){}
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q23. take a input from user in array and reverse it
-ans23. 
-#include<stdio.h>    
-int main()    
-{    
- int arr[5];
- for(int i=0;i<=4;i++){
-    printf("Enter array value: ");
-    scanf("%d",&arr[i]);
-    }
-    for(int i=4;i>=0;i--){
-        printf("%d",arr[i]);
-    }
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q24. first take input array size then take input array value form user and then print all values
-ans24.
-#include <stdio.h>
-int main()
-{
-    int n;
-    printf("Enter array size: ");
-    scanf("%d", &n);
-    char arr[n];
-    for (int i = 0; i <= n; i++){
-        printf("enter array value at index %d: ",i);
-        scanf("%d",&arr[i]);
-    }
-    for(int i=0;i<=n;i++){
-        printf("%d",arr[i]);
-    }
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q25. Convert a number into its binary value
-ans25.
-#include <stdio.h>
-int main(){
-    int n=10,arr[100],i,m;
-    for(i=0;n>0;i++){
-        arr[i]=n%2;
-        n=n/2;
-    }
-    for(int j = i - 1;j>=0;j--){
-        printf("%d",arr[j]);
-    }
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q26. Take input from user a number and convert it into its binary value ( same as q25 just take value from user)
-ans26.
-#include <stdio.h>
-int main(){
-    int n,arr[100],i,m;
-    printf("Enter a number: "); scanf("%d",&n);
-    for(i=0;n>0;i++){
-        arr[i]=n%2;
-        n=n/2;
-    }
-    for(int j = i - 1;j>=0;j--){
-        printf("%d",arr[j]);
-    }
-}
---------------------------------------------------------------------------------------------------------------------------------------
-Q27. Take input from user a number and convert it into its octal value
-ans27.
-#include <stdio.h>
-int main()
-{
-    int n,arr[100],i;
-    printf("Enter a number: "); scanf("%d",&n);
-    for(i=0;n>0;i++)
-    {
-        arr[i]=n%8;
-        n=n/8;
-    }
-    for(int j = i - 1;j>=0;j--)
-    {
-        printf("%X",arr[j]);
-    }
-    
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q28. Take input from user a number and convert it into its hexadecimal value
-ans28.
-#include <stdio.h>
-int main()
-{
-    int n,arr[100],i;
-    printf("Enter a number: "); scanf("%d",&n);
-    for(i=0;n>0;i++)
-    {
-        arr[i]=n%16;
-        n=n/16;
-    }
-    for(int j = i - 1;j>=0;j--)
-    {
-        printf("%X",arr[j]);
-    }
-    
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q29.Write a program to find armstrong number
-ans29.
+Q18.Write a program to find armstrong number
+ans18.
 #include <stdio.h>
 int main()
 {
     int n, r, sum = 0, temp;
-    printf("enter the number=");
+    printf("Enter a number: ");
     scanf("%d", &n);
     temp = n;
     while (n > 0)
@@ -415,19 +302,16 @@ int main()
         sum = sum + (r * r * r);
         n = n / 10;
     }
-    if (temp == sum)
-        printf("armstrong  number ");
-    else
-        printf("not armstrong number");=
+    (temp == sum)?printf("Armstrong"):printf("Not Armstrong");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q30. write a program to find palinddrom number
-ans30.
+Q19.write a program to find palinddrom number
+ans19.
 #include <stdio.h>
 int main()
 {
     int n, r, sum = 0, temp;
-    printf("enter the number=");
+    printf("Enter a number: ");
     scanf("%d", &n);
     temp = n;
     while (n > 0)
@@ -436,14 +320,11 @@ int main()
         sum = (sum * 10) + r;
         n = n / 10;
     }
-    if (temp == sum)
-        printf("palindrome number ");
-    else
-        printf("not palindrome");
+    (temp == sum)?printf("palindrome number "):printf("not palindrome");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q31. take 3 digit input number from user and Separate three number then print sum of trio number
-ans31.
+Q20.write a program to input three digit number from user and print sum of trio number.
+ans20.
 #include <stdio.h>
 int main()
 {
@@ -457,179 +338,191 @@ int main()
     d = a + b + c;
     printf("%d", d);
 }
---------------------------------------------------------------------------------------------------------------------------------------
-q32. same question number 31 but in shorter 
-ans32.
-#include <stdio.h>
-int main()
-{
-    int n , a, b, c, d;
-    printf("Enter 3 digit number: "); scanf("%d",&n);
-    a = n % 10;
-    b = (n / 10) % 10;
-    c = (n / 100) % 10; 
-    printf("%d",d=a+b+c);
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q33. same question number 31 but in shorter(more shorter then 32)
-ans33.
+
+// Alternative codes
+// 1)
 #include <stdio.h>
 int main()
 {
     int n, a, b, c, d;
-    printf("Enter 3 digit number: ");
+    printf("Enter a number: ");
     scanf("%d", &n);
     a = n % 10 + ((n / 10) % 10) + ((n / 100));
     printf("%d", a);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q34. same question number 31 but in shorter(more shorter then 33)
-ans34.
-#include <stdio.h>
-int main(){
-    int a=555;
-    a = a % 10 + ((a / 10) % 10) + ((a / 100));
-    printf("%d", a);}
---------------------------------------------------------------------------------------------------------------------------------------
-q35. same question number 31 but in shorter(more shorter then 34)
-ans35.
-#include <stdio.h>
-int main(){ int a=555; a = a % 10 + ((a / 10) % 10) + ((a / 100)); printf("%d", a);}
---------------------------------------------------------------------------------------------------------------------------------------
-q36. Find 1st largest number in array
-ans36.
+Q21.write a program to Find 1st largest number in array
+ans21.
 #include <stdio.h>
 int main()
 {
-    int arr[10]={12,51,84,46,88,89,240,25,11,44};
-    int n=10,m1,m2,i;
-    m1=0;
-    for(i=0;i<n;i++){
-        if(arr[i]>m1)
-            m1=arr[i];
-    }
-    printf("%d\t",m1);
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q37. Find 2 largest numbers in array
-ans37.
-#include <stdio.h>
-int main()
-{
-    int arr[10]={12,51,84,46,88,89,240,25,11,44};
-    int n=10,m1,m2,i;
-    m1=0;
-    for(i=0;i<n;i++)
+    int arr[10], m1, i;
+
+    for(i=0;i<10;i++)
     {
-        if(arr[i]>m1)
-        {
-            m2=m1;
-            m1=arr[i];
-        }
-            else if(arr[i]>m2 && arr[i]<m1)
-            {
-             m2=arr[i];
-            }
+        printf("Index No %d: ",i);
+        scanf("%d",&arr[i]);
     }
-    printf("%d & %d",m1,m2);
+    m1 = 0;
+    for (i = 0; i < 10; i++)
+    {
+        if (arr[i] > m1)
+        {
+            m1 = arr[i];
+        }
+    }
+
+    printf("Maxium element: %d", m1);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q37. Tarun sir special question (basically advance version of Fibonacci series).
-ans37.
+Q22.write a program to Find 2nd largest numbers in array
+ans22.
 #include <stdio.h>
-int main(){
-    int s=0;
-    for (int i=1;i<=10;i++){
-        if(i<=3){
-            printf("%d\t",i);
+int main()
+{
+    int arr[10], m1, m2, i;
+
+    for (i = 0; i < 10; i++)
+    {
+        printf("Index No %d: ", i);
+        scanf("%d", &arr[i]);
+    }
+    m1 = m2 = 0;
+    for (i = 0; i < 10; i++)
+    {
+        if (arr[i] > m1)
+        {
+            m2 = m1;
+            m1 = arr[i];
+        }
+        else if (arr[i] > m2 && arr[i] < m1)
+        {
+            m2 = arr[i];
+        }
+    }
+    printf("1 Maxium element: %d\n", m1);
+    printf("2 Maxium element: %d", m2);
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q23. Tarun sir special question (basically advance version of Fibonacci series).
+ans23.
+#include <stdio.h>
+int main()
+{
+    int s = 0;
+    for (int i = 1; i <= 10; i++)
+    {
+        if (i <= 3)
+        {
+            printf("%d\t", i);
             s = s + i;
         }
-        else{
-            printf("%d\t",s);
+        else
+        {
+            printf("%d\t", s);
             s = s + s;
         }
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q38. Check if given name in character array is palindrome or not
-ans38.
+Q24.write a program to Check if given string is palindrome.
+ans24.
 #include <stdio.h>
 #include <string.h>
-int main(){
-    char c[20] = "NITIN";
-    char d[20];
+int main()
+{
+    char str[20];
+    printf("Enter a string: ");
+    scanf("%s",&str);
 
-    strcpy(d,c);
-    strrev(d);
-    if(strcmpi(c,d)==0)
-    printf("Given name is a palindrome");
-    else
-    printf("Give name is not a palindrome");
+    char tmp[20];
+
+    strcpy(tmp, str);
+    strrev(tmp);
+    (strcmpi(str, tmp) == 0)?printf("Palindrome"):printf("Not Palindrome");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q39. print this order "d       do      dog     dogo    dogog   dogogg"
-ans39.
+Q25.write a program to print this order "d  do  dog  o  og  g"
+ans25.
 #include <stdio.h>
 int main(){
-    char c[20] = "dog",temp[20];
+    char str[20],tmp[20];
     int i, j, k;
+    printf("Enter a string: ");
+    scanf("%s",&str);
 
-    for(i=0;c[i]!='\0';i++)
+    for(i=0;str[i]!='\0';i++)
     {
-        for(j=i;c[j]!='\0';j++)
+        for(j=i,k=0;str[j]!='\0';j++)
         {
-            temp[k++] = c[j];
-            temp[k] = '\0';
-            printf("%s\t",temp);
+            tmp[k++] = str[j];
+            tmp[k] = '\0';
+            printf("%s  ",tmp);
         }
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q40. Rotate an array for example:-
+Q26.write a program to Rotate an array, for example:-
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 arr[10] = {1,2,3,4,5,6,7,8,9,10};
 if p=5
 output should like this:- 6 7 8 9 10 1 2 3 4 5
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans40.
+ans26.
 #include <stdio.h>
-int main() {
-   int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-   int i, f, n=10, temp[10];
-   printf("Enter element from where you want to start rotation: "); scanf("%d",&f);
-   for(i=0;i<f;i++)
-   {
-    temp[i] = arr[i];
-   }
-   for(i=f;i<n;i++)
-   {
-    printf("%d\t",arr[i]);
-   }
-   for(i=0;i<f;i++)
-   printf("%d\t",temp[i]);
+int main()
+{
+    int arr[10];
+    int i, pos, n = 10, temp[10];
+
+    printf("Enter elements in array--\n");
+    for(i=0;i<n;i++)
+    {
+        printf("Index No %d: ",i);
+        scanf("%d",&arr[i]);
+    }
+
+    printf("Enter position: ");
+    scanf("%d", &pos);
+    for (i = 0; i < pos; i++)
+    {
+        temp[i] = arr[i];
+    }
+    for (i = pos; i < n; i++)
+    {
+        printf("%d  ", arr[i]);
+    }
+    for (i = 0; i < pos; i++)
+    {
+        printf("%d  ", temp[i]);
+    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q41. Print all array even element in the end position and odd element in beginning position, for example.
+Q27.write a program to Print all Even elements in end and odd elements in beginning in array for example.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 arr[10] = {1,2,3,4,5,6,7,8,9,10};
 
-output should like this:- 1 3 5 7 9 2 4 6 8 10
+Output:- 1 3 5 7 9 2 4 6 8 10
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans41. 
+ans27. 
 #include <stdio.h>
-int main() {
-   int arr[10] = {1, 2, 4, 3, 5, 6, 7, 8, 9, 10};
-   int i, f=0, n=10, temp[10],g=0;
-   for(i=0;i<n;i++)
-   {
-      if(arr[i] %2 != 0)
-      printf("%d\t",arr[i]);
-   }
-   for(i=0;i<n;i++)
-   {
-      if(arr[i]%2==0)
-      printf("%d\t",arr[i]);
-   }
+int main()
+{
+    int arr[10], i, n = 10, temp[10];
+
+    for (i = 0; i < n; i++)
+    {
+        printf("Index No %d: ", i);
+        scanf("%d", &arr[i]);
+    }
+    for (i = 0; i < n; i++)
+    {
+        (arr[i] % 2 != 0) ? printf("%d  ", arr[i]) : printf("");
+    }
+    for (i = 0; i < n; i++)
+    {
+        (arr[i] % 2 == 0) ? printf("%d  ", arr[i]) : printf("");
+    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
 q42. Reverse multiple words in a single character array at its own place, for example.
