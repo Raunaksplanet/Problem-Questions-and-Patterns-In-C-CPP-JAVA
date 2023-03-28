@@ -404,7 +404,7 @@ int main()
     printf("2 Maxium element: %d", m2);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q23. Tarun sir special question (basically advance version of Fibonacci series).
+Q23. Tarun sir (My Mentor) special question (basically advance version of Fibonacci series).
 ans23.
 #include <stdio.h>
 int main()
@@ -498,11 +498,11 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q27.write a program to Print all Even elements in end and odd elements in beginning in array for example.
+Q27.write a program to Print all Even elements in beginning with bracket and odd elements in end of the array for example.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 arr[10] = {1,2,3,4,5,6,7,8,9,10};
 
-Output:- 1 3 5 7 9 2 4 6 8 10
+Output:- [2] [4] [6] [8] [10] 1 3 5 7 9 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ans27. 
 #include <stdio.h>
@@ -517,54 +517,59 @@ int main()
     }
     for (i = 0; i < n; i++)
     {
-        (arr[i] % 2 != 0) ? printf("%d  ", arr[i]) : printf("");
+        (arr[i] % 2 == 0) ? printf("[%d]  ", arr[i]) : printf("");
     }
     for (i = 0; i < n; i++)
     {
-        (arr[i] % 2 == 0) ? printf("%d  ", arr[i]) : printf("");
+        (arr[i] % 2 != 0) ? printf("%d  ", arr[i]) : printf("");
     }
 }
+
 --------------------------------------------------------------------------------------------------------------------------------------
-q42. Reverse multiple words in a single character array at its own place, for example.
+Q28. Reverse multiple words in a single character array at its own place, for example.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 char c[20] = {"my name is ronak"};
 
 output should like this:- ym eman si kanor
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans42.
+Ans28.
 #include <stdio.h>
 #include <string.h>
-int main() {
-   char temp[20];
-   int i,k,j;
-   char c[20] = {"my name is ronak"};
+int main()
+{
+    char temp[20];
+    int i, k, j;
+    char str[20];
+    printf("Enter a string: ");
+    scanf("%[^\n]s",&str);
 
-  for(i=0,j=0;c[i] != '\0'; i++)
-  {
-   if(c[i] != ' ')
-   {
-    temp[j++] = c[i];
-    if(c[i+1] == '\0')
+    for (i = 0, j = 0; str[i] != '\0'; i++)
     {
-      temp[j] = '\0';
-      printf("%s ",strrev(temp)); 
+        if (str[i] != ' ')
+        {
+            temp[j++] = str[i];
+            if (str[i + 1] == '\0')
+            {
+                temp[j] = '\0';
+                printf("%s ", strrev(temp));
+            }
+        }
+        else
+        {
+            temp[j] = '\0';
+            printf("%s ", strrev(temp));
+            j = 0;
+        }
     }
-   }
-   else{
-    temp[j]='\0';
-    printf("%s ",strrev(temp));
-    j=0;
-   }
-  }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q43. write a program to input a 4 digit number from user and add till it dont become single digit, for example.
+Q29. write a program to input a 4 digit number from user and add till it dont become single digit number, for example.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 int a = 4572 (4+5+7+2 = 18) (1 + 8 = 9) 
 
 output should:- 9  
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans43. 
+ans29. 
 #include <stdio.h>
 int main()
 {
@@ -576,123 +581,77 @@ int main()
     printf("%d", a);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q44. if v = 1 then stdout A, if v = 2 then stdout BB, if v=5 then stdout E E E E E.
-ans. 
-#include <stdio.h>
+Q30.write a program to input a number from user and 
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+if input  = 1, input  = 2, input  = 5
+   Output = A, Output = BB, Output = EEEEE
 
-int main()
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ans30. 
+#include <stdio.h>
+int main(int a,int i)
 {
-    int a,i;
-    printf("Enter a value: "); scanf("%d",&a);
-    int n=a;
-    for(i=0;i<n;i++)
+    printf("Enter a number: ");
+    scanf("%d", &a);
+
+    int n = a;
+    
+    for (i = 0; i < n; i++)
     {
-        printf("%c",64+a);
+        printf("%c", 64 + a);
     }
 }
 // alternate code little advance.
 #include <stdio.h>
-
-int main()
+int main(int i,int a,int n)
 {
-    int i,a,n;
-    printf("Enter a value: "); scanf("%d",&a);
-    n=a;
-    for(i=1;i<=n;i++)
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    n = a;
+    for (i = 1; i <= n; i++)
     {
-        printf("%d.%c\n",i,64+a);
+        printf("%d.%c\n", i, 64 + a);
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q45. Factorial of given number by user.
-ans45
+Q31.write a program to Factorial of given number by user.
+ans31
 #include <stdio.h>
 int main()
 {
-	int x,facto=1;
-	printf("Enter Number: "); scanf("%d",&x);
-	printf("Factorial of %d is: ",x);
+    int x, facto = 1;
+    printf("Enter Number: ");
+    scanf("%d", &x);
 
-	while(x!=0)
-	{
-		facto *= x;
-		x--;
-	}
-	printf("%d",facto);
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q46. Multiplication of array.
-ans46.
-#include <stdio.h>
-
-int main()
-{
-    int a[5] = {2,2,2,2,2};
-    int b[5] = {2,3,4,5,6};
-    int c[5];
-    int i,n=5;
-
-    for(i=0;i<n;i++)
+    printf("Factorial of %d is: ", x);
+    while (x != 0)
     {
-        c[i] = a[i] * b[i];
+        facto *= x;
+        x--;
     }
-    for(i=0;i<n;i++)
-    {
-    printf("%d\t",c[i]);
-    } 
+    printf("%d", facto);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q47.Convert a given number into positive,negative and zero
-ans47.
+Q32.write a program to Executing both if and else statement simultaneously
+ans32. 
 #include <stdio.h>
 int main()
 {
-	int n;
-	
-    printf("Enter an integer : ");
-    scanf("%d",&n);
-    
-   if (n<0)
-   { 
-       n=-n;
-       printf("converted negative integar into positive: %d\n",n);
-	}
-	
-   if (n>0)
-   { 
-       printf("converted integar into positive: %d\n",n);
-	}
-
-   if (n>0 || n<0)
-   { 
-      n = 0;
-       printf("converted integar into zero: %d\n",n);
-	}
-}
---------------------------------------------------------------------------------------------------------------------------------------
-q48.Executing both if and else statement simultaneously
-ans48. 
-#include<stdio.h>
-
-int main()
-{
-    if(1)
+    if (1)
     {
-        a: printf("hello ");
-        goto b; 
-    } 
+    a: printf("hello ");
+        goto b;
+    }
     else
     {
-    goto a;
+        goto a;
     b: printf("World");
     }
-    return 0;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q49. Find sum of first n natural numbers
-ans49. 
+Q33.write a program to Find sum of first n natural numbers
+ans33. 
 #include <stdio.h>
-
 int main()
 {
     int a = 0, b;
@@ -705,36 +664,31 @@ int main()
     printf("%d", a);
 }	
 --------------------------------------------------------------------------------------------------------------------------------------
-q50. Write a program to input in array size of n and output all sub-array.
-ans50.
-#include<stdio.h>
+Q34. Write a program to input in array size of n and output all sub-array.
+ans34.
+#include <stdio.h>
+int main()
+{
+    int i, j, n=4,arr[4];
+    printf("Enter elements in array\n");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
 
-int main(){
-    int i,j,n;
-   printf("Enter array size: "); scanf("%d",&n);
-
-   int arr[n];
-
-   printf("Enter array elemnet-- \n");
-   for(i=0;i<n;i++)
-   {
-      scanf("%d",&arr[i]);
-   }
-   
-   for(i=0;i<n;i++)
-   {
-      for(j=i;j<n;j++)
-      {
-         printf("%d  ",arr[j]);
-      }
-      printf("\n");
-   }
+    for (i = 0; i < n+1; i++)
+    {
+        for (j = i+1; j < n; j++)
+        {
+            printf("[%d,%d], ", arr[i],arr[j]);
+        }
+    }
+    printf("\b\b ");
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q51. Write a program to add and subtract two number without using '+','-' operator.
-ans51.
+Q35. Write a program to add and subtract two number without using '+','-' operator.
+ans35.
 #include <stdio.h>
-
 int main()
 {
     int n, a, m, k;
@@ -748,9 +702,9 @@ int main()
         {
             a++;
         }
-        printf("Answer is %d", a);
+        printf("Sum is %d", a);
     }
-    else if(m == 2)
+    else if (m == 2)
     {
         printf("Enter Two number which you want to subtract: ");
         scanf("%d %d", &a, &n);
@@ -758,37 +712,22 @@ int main()
         {
             a--;
         }
-        printf("Answer is %d", a);
+        printf("Subtraction is %d", a);
     }
     else
-    printf("Wrong input");
+        printf("Wrong input");
 }	
---------------------------------------------------------------------------------------------------------------------------------------
-q52.Write a program to increment pointer with array data and output address and data of arrray in order.
-ans52.	
-#include <stdio.h>
 
-int main()
-{
-    int arr[] = {10,20,30};
-    int i,*ptr;
-    ptr = arr;
-    for(i=0;i<3;i++)
-    {
-        printf("Address of variable [%d]: = %x\n",i,ptr);
-        printf("data of variable    [%d]: = %d\n",i,*ptr);
-        ptr++;
-    }
-}
 --------------------------------------------------------------------------------------------------------------------------------------
-q53.Write a program to input a number from user and break into 3 parts in such orde:-
+Q36.Write a program to input a number from user and break into 3 parts in such orde:-
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if n = 15
 then a = 3 (can be random)
-     b = 7 (should be larger than 1 one)
-     c = 5 (shoulder be larger then 1 one)
+     b = 7 (should be larger then first one)
+     c = 5 (shoulder be larger then first one)
+total  = 15
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans53.
+ans36.
 #include<stdio.h>
 int main()
 {
@@ -801,144 +740,59 @@ int main()
     printf("%d %d %d", a,b,c); 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q54.Write a program to input a string from user and print output all the character at odd indexes:-
+Q37.Write a program to input a string from user and print all the character at odd indexes:-
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Input: A = "Raunaks"
 Output: Ruas
 Explained:- R a u n a k s 
-            1 2 3 4 5 6 7 
-Odd number: R   u   a   s
+            0 1 2 3 4 5 6 
+Odd number:   a   n   k
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Ans54. 
-#include<stdio.h>
-#include<string.h>
-int main()
+Ans37. 
+#include <stdio.h>
+int main(int i, int len)
 {
-    char arr[50] ;
-    printf("Enter a string: "); scanf("%[^\n]s", &arr);
-    int l = strlen(arr);
-    for(int i=0; i<l; i++)
+    char str[50];
+    printf("Enter a string: ");
+    scanf("%[^\n]s", &str);
+
+    for (i = 0; str[i] != '\0'; i++);
+    len = i;
+    for (i = 0; i < len; i++)
     {
-        (i % 2 == 0)?printf("%c",  arr[i]):printf("");
+        (i % 2 != 0) ? printf("%c", str[i]) : len;
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q55. Write a program to input a string from user and print output the size of string without using strlen function
-Ans55.
+Q38.Write a program to input a string from user and printits size without strings functions.
+Ans38.
 #include <stdio.h>
-int main()
+int main(int i)
 {
-    int i;
     char str[50];
-    printf("Enter a string: "); scanf("%[^\n]s", str);
-    for( i = 0 ; str[i]!='\0' ;i++);
+
+    printf("Enter a string: ");
+    scanf("%[^\n]s", str);
+    
+    for (i = 0; str[i] != '\0'; i++);
     printf("%d", i);
-}	
+}
 --------------------------------------------------------------------------------------------------------------------------------------
-q56 Find number of digits in a number figure
+Q39.Write a program to input a number from user and Find number of digits.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Input: A = 54265
 Output: Number of digit is 5
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans56.
+Ans38.
 #include <stdio.h>
-int main()
+int main(int n, int count)
 {
-    int n = 383456, counter=0;
-    for(counter = 0 ; n>0 ; counter++, n=n/10);
-    printf("Lenght is %d",counter);
-}	
---------------------------------------------------------------------------------------------------------------------------------------
-q57. Write a program to find 3 maxium numbers in array
-ans57.
-#include <stdio.h>
-int main()
-{
-    int arr[10],n = 10, i, m1 = 0, m2 = 0, m3 = 0;
-    printf("Enter element in array--- \n");
-    for(i=0;i<n;i++)
-    {
-        scanf("%d", &arr[i]);
-    }
+    count = 0;
 
-    for(i = 0; i<n; i++)
-    {
-        if(arr[i] > m1)
-        {
-            m3 = m2;
-            m2 = m1;
-            m1 = arr[i];
-        }
-        else if(arr[i]>m2 && arr[i]<m1)
-        {
-            m3 = m2;
-            m2 = arr[i];
-        }
-        else if(arr[i]<m2 && arr[i] < m1 && arr[i]>m3)
-        {
-            m3 = arr[i];
-        }
-    }
-    printf("1 Maxium number in array is %d\n", m1);
-    printf("2 Maxium number in array is %d\n", m2);
-    printf("3 Maxium number in array is %d", m3);
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    for (count = 0; n > 0; count++, n = n / 10);
+
+    printf("Lenght is %d", count);
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-q58. Print this pattern 	
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-2  3  4  5  6  7  8  9  10  
-3  4  5  6  7  8  9  10
-4  5  6  7  8  9  10
-5  6  7  8  9  10
-6  7  8  9  10
-7  8  9  10
-8  9  10
-9  10
-10
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Ans58.
-#include<stdio.h>
-int main()
-{
-    int i, j, str[10] = {1,2,3,4,5,6,7,8,9,10};
-
-    for(i=0; i<10 ;i++)
-    {
-        for(j=i+1; j<10 ;j++)
-        {
-            str[i] = str[j];
-            printf("%d  ",str[i]);
-        }
-        printf("\n");
-    }
-}	
---------------------------------------------------------------------------------------------------------------------------------------
-q59.Write a program to create own header file and than use it.
-ans59.
--- First we'll create a file name(name what ever you want for this questions we'll create file named head.h) remeber file extension shoulb be .h
--- the file:--
-	
-// File start
-void add(int a, int b)
-{
-    printf("Added value: %d\n", a + b);
-}
-void multiply(int a, int b)
-{
-    printf("Multiplied value: %d\n", a * b);
-}
-// File End
-
--- 2nd we create our main c file in whcih we use our header file 
-
-#include<stdio.h>
-#include "name.h"
-int main()
-{
-    
-    add(4,5);
-    multiply(2,2);
-}
-
---------------------------------------------------------------------------------------------------------------------------------------
-q60.
