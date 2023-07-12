@@ -64,4 +64,27 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q4. 
+Q4. Write a program to input a number from user and find that mid digit of that number is Even or not.
+ans4.
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a, len, r = 0, tmp;
+    char str[10];
+    cout << "Enter a number: ";
+    cin >> a;
+
+    itoa(a,str,10);
+    r = a;
+    for (len = 0; r > 0; (len++), (r = r / 10));
+    
+    tmp = len/2;
+
+    (str[tmp] %2 == 0)?cout << "Even Number" : cout << "Not Even";
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q5. 
+Ans
