@@ -86,5 +86,24 @@ int main()
 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q5. 
-Ans
+Q5. first input a number from user and check if number is more and less then 3 digit print Error then check if number is even or odd.
+    If number is even then print first digit of the numebr &  if the number is odd then print mid digit of number using only single 
+    one line of code (EG: teranry operator)
+Ans5. 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+ 
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    int x = ((n>=100 && n<=999)?(n%2==0)?((n/10)%10):((n/100)%10):0);
+
+    (x==0)?cout << "Wrong Input": cout << x;
+ 
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q6.
+    
