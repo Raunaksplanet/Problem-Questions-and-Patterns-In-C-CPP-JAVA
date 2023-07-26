@@ -105,5 +105,62 @@ int main()
  
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q6.
-    
+Q6.  /*
+    question4. Print this pattern
+    1
+     2
+      3
+       4
+        5
+         6
+          7
+           8 
+            9 
+             10
+    In single loop.
+    */
+Ans5.
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int i = 1;
+    while(i<=10)
+    {
+        cout << setw(i) << i << "\n";
+        i++;
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q7. 
+    /*
+    Print this pattern
+    *    
+    **   
+    ***  
+    **** 
+    *****
+    In single loop.
+    */
+Ans7.
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int i;
+    for(i=1;i<=5;i++)
+    {
+        cout << setw(i+1) << setfill('*') << "\n";
+    }
+    //OR
+
+    string s = "*";
+    for(int i=1;i<=5;i++,(s =s + "*"))
+    {
+        cout << s << "\n";
+    }
+}
