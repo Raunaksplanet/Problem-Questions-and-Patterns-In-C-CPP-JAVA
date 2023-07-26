@@ -164,3 +164,49 @@ int main()
         cout << s << "\n";
     }
 }
+--------------------------------------------------------------------------------------------------------------------------------------
+Q8.write a program to input a number from
+user and first check if number is 3 Digit.
+if number is 3 digit number then check if
+number is even or odd, if number if number is
+odd then print mid value if number is even then
+print first digit of number.
+Challenge is You have to perform all these things in
+single line of code.
+    
+ans8.
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int n, y;
+    cout << "Enter a number: ";
+    cin >> n;
+    y = ((n >= 100 && n <= 999) ? (n % 2 == 0) ? ((n / 10) % 10) : ((n / 100) % 10) : 0);
+    (y == 0) ? cout << "Wronng Input" : cout << y;
+}   
+--------------------------------------------------------------------------------------------------------------------------------------
+Q9.// reverse a number.
+    // Eg: n = 12345.
+    //     n = 54321 
+    
+ans9.
+int nn;
+    cout << "Enter a number: ";
+    cin >> nn;
+    int t = nn, rev = 0; 
+
+    while(nn>0)
+    {
+        rev = rev * 10 + (nn%10);
+        nn = nn / 10;
+    }
+
+    cout << "Reverse of " << t << " is " << rev; 
+
+
+    cout << "\n\n";
+--------------------------------------------------------------------------------------------------------------------------------------
+Q10.
