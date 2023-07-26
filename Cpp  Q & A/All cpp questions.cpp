@@ -165,14 +165,9 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q8.write a program to input a number from
-user and first check if number is 3 Digit.
-if number is 3 digit number then check if
-number is even or odd, if number if number is
-odd then print mid value if number is even then
-print first digit of number.
-Challenge is You have to perform all these things in
-single line of code.
+Q8.write a program to input a number from user and first check if number is 3 Digit. if number is 3 digit number then check if
+number is even or odd, if number if number is odd then print mid value if number is even then print first digit of number.
+Challenge is You have to perform all these things in single line of code.
     
 ans8.
 #include <iostream>
