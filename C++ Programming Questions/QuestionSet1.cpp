@@ -225,4 +225,27 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q11. 
+Q11. if string str = 12345 then print this pattern,
+/* output:
+54321
+4321
+321
+21
+1    */
+ans11. 
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    string str;
+    cout << "Enter string: ";
+    getline(cin, str);
+
+    reverse(str.begin(), str.end());
+    for (int i = 0; i < str.length(); i++)
+    {
+        cout << str.substr(i, str.length()) << "\n";
+    }
+}
