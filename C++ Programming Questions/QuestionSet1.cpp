@@ -249,3 +249,27 @@ int main()
         cout << str.substr(i, str.length()) << "\n";
     }
 }
+--------------------------------------------------------------------------------------------------------------------------------------
+Q12. Write a program to enter a 5 digit number from user and swap first & last digit in a number.
+Example:- Input:-  12345
+          Output:- 52341
+
+ans12. 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cout << "Input: ";
+    cin >> a;
+
+    char str[5], c;
+    itoa(a,str,10);
+    
+    c = str[0];
+    str[0] = str[4];
+    str[4] = c; 
+    cout << "Output: " << str;
+}
+--------------------------------------------------------------------------------------------------------------------------------------
