@@ -278,7 +278,7 @@ Q13.Write a program to input a string from user and if length of string is odd t
 Input: A = Raunaks // length is 7
 Output: n
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Ans38.
+Ans13.
 #include <iostream>
 using namespace std;
 int main()
@@ -289,5 +289,27 @@ int main()
     int a;
     a = str.length() / 2;
     (a % 2 != 0)?a = str.length() / 2 && cout << str[a]:0;
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q14.Write a program to print square in loop example.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+4 
+16 (square of 4)   
+256  (square of 16)
+65536 (square of 256)
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Ans14.
+#include <iostream>
+using namespace std;
+int main()
+{
+    // square
+    double b, a = 2;
+    for (int i = 1; i <= 4; i++)
+    {
+        b = a * a;
+        a = b;
+        cout << b << endl;
+    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
