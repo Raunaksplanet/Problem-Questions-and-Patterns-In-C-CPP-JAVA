@@ -273,3 +273,21 @@ int main()
     cout << "Output: " << str;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
+Q13.Write a program to input a string from user and if length of string is odd then print mid character of string.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Input: A = Raunaks // length is 7
+Output: n
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Ans38.
+#include <iostream>
+using namespace std;
+int main()
+{
+    string str;
+    cout << "Enter String: ";
+    cin >> str;
+    int a;
+    a = str.length() / 2;
+    (a % 2 != 0)?a = str.length() / 2 && cout << str[a]:0;
+}
+--------------------------------------------------------------------------------------------------------------------------------------
