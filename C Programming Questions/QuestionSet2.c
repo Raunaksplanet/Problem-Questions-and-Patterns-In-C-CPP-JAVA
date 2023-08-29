@@ -430,7 +430,7 @@ Q39.Write a program to input a number from user and Find number of digits.
 Input: A = 54265
 Output: Number of digit is 5
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Ans38.
+Ans39.
 #include <stdio.h>
 int main(int n, int count)
 {
