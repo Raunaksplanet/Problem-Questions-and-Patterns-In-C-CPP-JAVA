@@ -337,7 +337,7 @@ int main()
     {
         cout << setw(c) << str[c-1] << endl;
         a = c-1;
-        for(int i = 1, j = 2; i <= b / 2 ; i++, ++j)
+        for(int i = 1, j = 2; i <= c-1 ; i++, ++j)
         {
             cout  << setw(c+i) << str.substr(--a,++j) << endl;
         }
