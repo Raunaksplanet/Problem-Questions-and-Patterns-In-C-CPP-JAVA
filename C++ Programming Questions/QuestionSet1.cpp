@@ -85,6 +85,21 @@ int main()
     (str[tmp] %2 == 0)?cout << "Even Number" : cout << "Not Even";
 
 }
+// Or Alternatice Code
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{   
+    int n, f;
+    cout << "Enter Number: "; 
+    cin >> n;
+    char str[5];
+    itoa(n,str,10);
+    (f = strlen(str)/2, str[f] % 2 != 0)?cout << "Odd":cout << "Even";
+}
 --------------------------------------------------------------------------------------------------------------------------------------
 Q5.Write a program to input the string from user if length of string is odd then print pattern like this.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
