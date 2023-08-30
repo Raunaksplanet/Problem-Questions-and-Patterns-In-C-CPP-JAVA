@@ -146,21 +146,6 @@ int main(int a)
 Q12.Write a program to check if a year is leap year or not
 ans12. 
 #include <stdio.h>
-int main(int a)
-{
-    printf("Enter a number: ");
-    scanf("%d", &a);
-    if (a > 0)
-        printf("Number is positive");
-    else if (a < 0)
-        printf("number is negative");
-    else if(a == 0)
-        printf("number is zero"); 
-}
-
-// Alternative codes
-// 1)
-#include <stdio.h>
 int main()
 {
   int a;
