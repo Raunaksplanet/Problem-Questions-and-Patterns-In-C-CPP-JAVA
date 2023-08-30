@@ -86,21 +86,39 @@ int main()
 
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q5. 
+Q5.Write a program to input the string from user if length of string is odd then print pattern like this.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Input:- Raunaks // length is 7
+Output:- n
+        una
+       aunak
+      raunaks
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''' 
 Ans5. 
-#include<iostream>
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
-{
- 
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
-    int x = ((n>=100 && n<=999)?(n%2==0)?((n/10)%10):((n/100)%10):0);
-
-    (x==0)?cout << "Wrong Input": cout << x;
- 
+{   
+    string str;
+    cout << "Enter String: ";
+    cin >> str;
+    
+    int a,b = str.length(), c = str.length() / 2+1;
+    if(b % 2 != 0)
+    {
+        cout << setw(c) << str[c-1] << endl;
+        a = c-1;
+        for(int i = 1, j = 2; i <= c-1 ; i++, ++j)
+        {
+            cout  << setw(c+i) << str.substr(--a,++j) << endl;
+        }
+    }
+    else
+    {
+        cout << "Size of string is not odd";
+    }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
 Q6.  /*
@@ -313,39 +331,4 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q14.Write a program to input the string from user if length of string is odd then print pattern like this.
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Input:- Raunaks // length is 7
-Output:- n
-        una
-       aunak
-      raunaks
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-ans14. 
-#include <iostream>
-#include <iomanip>
-using namespace std;
-
-int main()
-{   
-    string str;
-    cout << "Enter String: ";
-    cin >> str;
-    
-    int a,b = str.length(), c = str.length() / 2+1;
-    if(b % 2 != 0)
-    {
-        cout << setw(c) << str[c-1] << endl;
-        a = c-1;
-        for(int i = 1, j = 2; i <= c-1 ; i++, ++j)
-        {
-            cout  << setw(c+i) << str.substr(--a,++j) << endl;
-        }
-    }
-    else
-    {
-        cout << "Size of string is not odd";
-    }
-}
---------------------------------------------------------------------------------------------------------------------------------------
-Q15. 
+Q14.
