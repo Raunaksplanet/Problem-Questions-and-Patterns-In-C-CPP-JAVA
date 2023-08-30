@@ -313,3 +313,39 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
+Q14.Write a program to input the string from user if length of string is odd then print pattern like this.
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Input:- Raunaks // length is 7
+Output:- n
+        una
+       aunak
+      raunaks
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+ans14. 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string str = "raunaks";
+    // cout << "Enter String: ";
+    // cin >> str;
+
+    int b, a = str.length();
+    if (a % 2 != 0)
+    {
+        b = a / 2;
+        cout << str[b] << endl;
+        for (int i = 1,j=2; i <= a / 2 + 1; i++,++j)
+        {
+            
+            cout << str.substr(--b, ++j) << endl;
+        }
+    }
+    else
+    {
+        cout << "Size of string is not odd";
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q15. 
