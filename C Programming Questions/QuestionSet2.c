@@ -108,6 +108,24 @@ int main(){
         }
     }
 }
+
+// OR C++ CODE
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    string str = "dog";
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = i; j < 3; j++)
+        {
+            cout << str.substr(i,j+1-i) << "  ";
+        }
+    }
+}
 --------------------------------------------------------------------------------------------------------------------------------------
 Q26.write a program to Rotate an array, for example:-
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
