@@ -335,10 +335,9 @@ int main()
     int a,b = str.length(), c = str.length() / 2+1;
     if(b % 2 != 0)
     {
-        a = b / 2;
-        cout << setw(c) << str[a] << endl;
-
-        for(int i = 1, j = 2; i <= b / 2 + 1 ; i++, ++j)
+        cout << setw(c) << str[c-1] << endl;
+        a = c-1;
+        for(int i = 1, j = 2; i <= b / 2 ; i++, ++j)
         {
             cout  << setw(c+i) << str.substr(--a,++j) << endl;
         }
