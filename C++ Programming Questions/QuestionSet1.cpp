@@ -346,4 +346,29 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q14.
+Q15. Write a program to input a string from user & Reverse at its own place.
+Ans15.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    string str, str2;
+    cout << "Enter String: ";
+    getline(cin,str);
+
+    for (int i = 0,f=0; i <= str.length(); i++)
+    {
+        if (str[i] == ' ' || str[i] == '\0')
+        {
+            str2 = str.substr(f, i - f);
+            f = i + 1;  
+            reverse(str2.begin(), str2.end());
+            cout << str2 << " ";
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q16. Write a program to 
+Ans16.
