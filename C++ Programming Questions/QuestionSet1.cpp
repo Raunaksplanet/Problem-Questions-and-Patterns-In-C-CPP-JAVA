@@ -305,6 +305,20 @@ int main()
     str[4] = c; 
     cout << "Output: " << str;
 }
+
+// Or Alternative Code.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter Number: ";
+    cin >> n;
+
+    cout << "Answer. " << (((((n%10)*10000)+(n%10000))/10)*10)+(n/10000);
+}
 --------------------------------------------------------------------------------------------------------------------------------------
 Q13.Write a program to input a string from user and if length of string is odd then print mid character of string.
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
