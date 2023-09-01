@@ -428,20 +428,28 @@ int main()
     cout << "Number of elements: " << n;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q17.Write a program to sorting then reversing and then finding maximum and smallest element in array.
+Q17.Write a program to sorting, reversing, finding maximum, minimum & data enter by user in array (Performing all these operations at same time) using algorithm headerfile
 Ans17.
-#include<iostream>
+#include <iostream>
 #include <algorithm>
 using namespace std;
 
 int main()
 {
-    int arr[] = {123,56,35,67,52,236,57,7,235,43};
+    int arr[10], d;
+    cout << "Enter elements: " << endl;
+    for(int i = 0 ; i < 10; i++)
+    {
+        cin >> arr[i];
+    }
+
+    cout << "Data you want to find: ";
+    cin >> d;
 
     sort(arr,arr+10);
     reverse(arr,arr+10);
     int *a = max_element(arr,arr+10);
-    int *f = min_element(arr,arr+10);
+    int *b = min_element(arr,arr+10);
 
     for (int i = 0; i < 10; i++)
     {
@@ -450,7 +458,8 @@ int main()
     cout << endl;
     
     cout << "Maximum Element: " << *a << endl;
-    cout << "Minimum Element: " << *f;
+    cout << "Minimum Element: " << *b << endl;
+    find(arr,arr+10,d) != arr+10 ? cout << "Data Found":cout << "Data Not Found";
 }
 --------------------------------------------------------------------------------------------------------------------------------------
 Q18.
