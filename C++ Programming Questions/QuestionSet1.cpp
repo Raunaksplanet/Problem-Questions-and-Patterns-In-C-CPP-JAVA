@@ -135,6 +135,31 @@ int main()
         cout << "Size of string is not odd";
     }
 }
+
+// Or Alternative Code.
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    string str = "Raunak";
+    int l, x = 0, y = 0;
+
+    l = str.length();
+    y = l / 2;
+
+    for(int i = 0; i <= l/2; i++,x++,y--)
+    {
+        cout << setw(y+1) << " ";
+        for(int j=y;j<=i+x+y;j++)
+        {
+            cout << str[j];
+        }
+        cout << endl;
+    }
+}
 --------------------------------------------------------------------------------------------------------------------------------------
 Q6.  /*
     question4. Print this pattern
