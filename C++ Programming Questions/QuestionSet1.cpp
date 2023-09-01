@@ -428,7 +428,7 @@ int main()
     cout << "Number of elements: " << n;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q17.Reverse array without using loop.
+Q17.Write a program to sorting then reversing and then finding maximum and smallest element in array.
 Ans17.
 #include<iostream>
 #include <algorithm>
@@ -436,13 +436,21 @@ using namespace std;
 
 int main()
 {
-    int arr[] = {1,2,3,4,5,6,7,8,9,10};
+    int arr[] = {123,56,35,67,52,236,57,7,235,43};
 
+    sort(arr,arr+10);
     reverse(arr,arr+10);
+    int *a = max_element(arr,arr+10);
+    int *f = min_element(arr,arr+10);
+
     for (int i = 0; i < 10; i++)
     {
         cout << arr[i] << " ";
     }
+    cout << endl;
+    
+    cout << "Maximum Element: " << *a << endl;
+    cout << "Minimum Element: " << *f;
 }
 --------------------------------------------------------------------------------------------------------------------------------------
 Q18.
