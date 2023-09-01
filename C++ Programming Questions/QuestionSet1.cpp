@@ -462,4 +462,23 @@ int main()
     find(arr,arr+10,d) != arr+10 ? cout << "Data Found":cout << "Data Not Found";
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q18.
+Q18.write a program to print this pattern if str = "dog", d  do  dog  o  og  g.
+ans18.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string str;
+    cout << "Enter String: ";
+    cin >> str;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = i; j < 3; j++)
+        {
+            cout << str.substr(i,j+1-i) << "  ";
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q19.
