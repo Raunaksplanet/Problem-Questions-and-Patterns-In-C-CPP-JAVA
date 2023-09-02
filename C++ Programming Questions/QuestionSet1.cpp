@@ -481,4 +481,33 @@ int main()
     }
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q19.
+Q19. Write a program to pass a function as agruments.
+ans19.
+#include <iostream>
+using namespace std;
+
+int add(int x, int y)
+{
+    return x + y;
+}
+
+int multiply(int x, int y)
+{
+    return x * y;
+}
+
+int invoke(int x, int y, int (*func)(int, int))
+{
+    return func(x, y);
+}
+
+int main()
+{
+    cout << "Addition of 20 and 10 is ";
+    cout << invoke(20, 10, &add) << '\n';
+
+    cout << "Multiplication of 20 and 10 is ";
+    cout << invoke(20, 10, &multiply) << '\n';
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+Q20.
