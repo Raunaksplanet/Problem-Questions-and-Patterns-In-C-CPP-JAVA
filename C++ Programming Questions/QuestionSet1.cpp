@@ -510,4 +510,28 @@ int main()
     cout << invoke(20, 10, &multiply) << '\n';
 }
 --------------------------------------------------------------------------------------------------------------------------------------
-Q20.
+Q20.Given an array arr[] of size N-1 with integers in the range of [1, N], the task is to find the missing number from the first N integers.
+ans20.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[] = {1, 2, 4, 6, 3, 5, 8};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int f = 0, g = 0;
+
+    for(int i = 1 ; i <= n; i++)
+    {
+        f += i;
+    }
+
+    // f = n * (n + 1) / 2;
+
+    for(int i = 0; i < n-1; i++)
+    {
+        g += arr[i];
+    }
+
+    cout << f-g;    
+}
