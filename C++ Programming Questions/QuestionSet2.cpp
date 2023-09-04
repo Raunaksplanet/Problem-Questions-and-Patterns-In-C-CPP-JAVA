@@ -23,22 +23,36 @@ int main() {
         cout << line << endl;
     }
 }
-
-// OR Alternative Code
-
-#include<stdio.h>
+------------------------------------------------------------------------------------------------------------------------------------
+Q23.Write a Program To Find Initials of a string.
+"""""""""""""""""""""""""""""""""""""""""
+Input = Tree With Apples
+Output = T W A
+"""""""""""""""""""""""""""""""""""""""""
+ans23.
+#include<iostream>
+using namespace std;
 
 int main()
 {
-    char c;
-    FILE *fp = fopen(_FILE_, "r");
-  
-    do
+    string str;
+    cout << "Enter String: ";
+    getline(cin,str);
+
+    int f = str.length();
+    cout << str[0] << " ";
+
+    for(int i = 0 ; i < f; i++)
     {
-        c = fgetc(fp);
-        putchar(c);
+        if(str[i] == ' ')
+        {
+            if(str[i+1] == ' ')
+            {
+                 continue;
+            }
+            cout << str[i+1] << " ";
+        }
     }
-    while (c != EOF);
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q23.
+Q24. 
