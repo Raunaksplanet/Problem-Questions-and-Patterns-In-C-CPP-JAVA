@@ -109,4 +109,30 @@ int main()
   }
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q26.
+Q26.Write a program to input a string array from user and find closet distance between two words.
+ans26.
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+  string str[] = {"raunak", "gupta", "is", "good", "boy"};
+  string str2 = "gupta", str3 = "boy";
+  int m = 0, n = sizeof(str) / sizeof(str[0]);
+  
+  for(int i = 0; i < n; i++)
+  {
+    if(str[i] == str2)
+    {
+      m = i;
+    }
+    if(str[i] == str3)
+    {
+      cout << i-m;
+      break;
+    }
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------
+Q27.
