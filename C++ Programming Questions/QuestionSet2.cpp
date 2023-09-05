@@ -80,4 +80,33 @@ int main()
   cout << c;
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q25.
+Q25. Write a program to input a string from user and brak string into next line after every space.
+"""""""""""""""""""""""""""""""""""""""""
+Input = Tree With Apples
+Output = Tree
+         With
+         Apples
+"""""""""""""""""""""""""""""""""""""""""
+ans25.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string str, str2;
+  cout << "Enter String: ";
+  getline(cin,str);
+  
+  int n = str.length();
+  for (int i = 0, f = 0; i <= n; i++)
+  {
+    if (str[i] == ' ' || str[i] == '\0')
+    {
+      str2 = str.substr(f, i - f);
+      f = i + 1;
+      cout << str2 << endl;
+    }
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------
+Q26.
