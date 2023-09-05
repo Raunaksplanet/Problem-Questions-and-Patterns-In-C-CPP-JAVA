@@ -80,7 +80,7 @@ int main()
   cout << c;
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q25. Write a program to input a string from user and brak string into next line after every space.
+Q25. Write a program to input a string from user and break string into next line after every space.
 """""""""""""""""""""""""""""""""""""""""
 Input = Tree With Apples
 Output = Tree
