@@ -109,7 +109,12 @@ int main()
   }
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q26.Write a program to input a string array from user and find closet distance between two words.
+Q26.Write a program to input words in string array from user and find closest distance between two words.
+"""""""""""""""""""""""""""""""""""""""""
+Input = raunak gupta is a good boy
+word1 = gupta, word2 = boy 
+Output = 3
+"""""""""""""""""""""""""""""""""""""""""
 ans26.
 #include <iostream>
 #include <algorithm>
@@ -135,4 +140,29 @@ int main()
   }
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q27.
+Q27. Write a program to input multiple ascaii values from user in a string and convert into chracters
+"""""""""""""""""""""""""""""""""""""""""
+Input = 82 97 117 110 97 107 32 71 117 112 116 97
+Output = Raunak Gupta
+"""""""""""""""""""""""""""""""""""""""""
+ans27.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string str = "82 97 117 110 97 107 32 71 117 112 116 97", str2;
+  int e;
+  for(int i = 0,f = 0; i <= str.length(); i++)
+  {
+    if(str[i] == ' ' || str[i] == '\0')
+    {
+      str2 = str.substr(f,i-f);
+      f = i + 1;
+      e = stoi(str2);
+      printf("%c", e);
+    }
+  } 
+}
+------------------------------------------------------------------------------------------------------------------------------------
+Q28. Write a program to
