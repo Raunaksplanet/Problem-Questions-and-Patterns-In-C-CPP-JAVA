@@ -55,4 +55,29 @@ int main()
     }
 }
 ------------------------------------------------------------------------------------------------------------------------------------
-Q24. 
+Q24. Write a program to input a string S consisting of lowercase Latin Letters, the task is to find the *first* non-repeating character in S.
+ans24.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  string str = "geeksforgeeks";
+  int i, j, m = 0;
+  char c;
+  for (i = 0; i < str.length(); i++)
+  {
+    c = str[i];
+    for (j = i + 1, m = 0; j < str.length(); j++)
+    {
+      (str[j] == c) ? m++ : m;
+    }
+    if (m == 0)
+    {
+      break;
+    }
+  }
+  cout << c;
+}
+------------------------------------------------------------------------------------------------------------------------------------
+Q25.
